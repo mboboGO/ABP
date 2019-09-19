@@ -1,0 +1,15 @@
+test_iter: 6988
+test_interval: 1369
+base_lr: 0.00050000000475
+display: 100
+max_iter: 47915
+lr_policy: "step"
+gamma: 0.5
+momentum: 0.899999976158
+weight_decay: 0.000500000023749
+stepsize: 13690
+snapshot: 1369
+snapshot_prefix: "/gdata/minsb/mpii/models/ada"
+net: "adapooling.prototxt"
+test_initialization: true
+iter_size: 1

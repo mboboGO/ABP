@@ -1,0 +1,3 @@
+*.caffemodel
+model_init*
+caffe_ada

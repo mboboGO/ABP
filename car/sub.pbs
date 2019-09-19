@@ -1,0 +1,20 @@
+#PBS -N ada_res2
+#PBS -o ./log/ada_res2.out
+#PBS -e ./log/ada_res2.err
+#PBS -l nodes=1:gpus=2:D
+#PBS -r y
+
+cd $PBS_O_WORKDIR
+echo Time is `date`
+echo Directory is $PWD
+
+echo This job runs on following nodes:
+echo $PBS_NODEFILE
+cat $PBS_NODEFILE
+
+echo $PBS_GPUFILE
+cat $PBS_GPUFILE
+
+startdocker -D /gdata/minsb \
+-c 'bash /ghome/minsb/adapooling_car/run.sh config_ada_res2 --weights=./model_init --gpu=all'\
+ bit:5000/cuda8-cudnn6-caffe-dev-ubuntu16.04

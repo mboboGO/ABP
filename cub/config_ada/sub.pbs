@@ -1,0 +1,20 @@
+#PBS -N ada_pre
+#PBS -o ./log.out
+#PBS -e ./log.err
+#PBS -l nodes=1:gpus=1:S
+#PBS -r y
+
+cd $PBS_O_WORKDIR
+echo Time is `date`
+echo Directory is $PWD
+
+echo This job runs on following nodes:
+echo $PBS_NODEFILE
+cat $PBS_NODEFILE
+
+echo $PBS_GPUFILE
+cat $PBS_GPUFILE
+
+startdocker -D /gdata/minsb \
+-c 'bash /ghome/minsb/adapooling_cub/config_ada/run.sh'\
+ bit:5000/cuda8-cudnn6-caffe-dev-ubuntu16.04

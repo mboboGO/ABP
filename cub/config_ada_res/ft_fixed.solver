@@ -1,0 +1,13 @@
+base_lr: 0.10000000149
+display: 100
+max_iter: 44880
+lr_policy: "step"
+gamma: 0.25
+momentum: 0.899999976158
+weight_decay: 4.99999987369e-06
+stepsize: 3740
+snapshot: 10000000
+snapshot_prefix: "ft_fixed"
+net: "ft_fixed.prototxt"
+test_initialization: false
+iter_size: 1

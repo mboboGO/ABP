@@ -1,0 +1,15 @@
+test_iter: 4020
+test_interval: 1018
+base_lr: 0.000050000000475
+display: 100
+max_iter: 71260
+lr_policy: "step"
+gamma: 0.5
+momentum: 0.899999976158
+weight_decay: 0.000500000023749
+stepsize: 10180
+snapshot: 1018
+snapshot_prefix: "/gdata/minsb/car_196/models/ada"
+net: "adapooling.prototxt"
+test_initialization: true
+iter_size: 1

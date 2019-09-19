@@ -1,0 +1,15 @@
+test_iter: 5794
+test_interval: 749
+base_lr: 0.0010000000475
+display: 100
+max_iter: 52430
+lr_policy: "step"
+gamma: 0.5
+momentum: 0.899999976158
+weight_decay: 0.000500000023749
+stepsize: 7490
+snapshot: 749
+snapshot_prefix: "/gdata/minsb/CUB_200_2011/models/ada"
+net: "adapooling.prototxt"
+test_initialization: true
+iter_size: 1
